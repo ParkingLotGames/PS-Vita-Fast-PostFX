@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Uber Opaque
+  m_Shader: {fileID: 4800000, guid: 496c05a7e8d081c4289290c50e7fd088, type: 3}
+  m_ShaderKeywords: _AMBIENT_LIGHT_PROCESSING_PER_VERTEX _DIFFUSE_PROCESSING_PER_VERTEX
+    _DIFFUSE_TERM_LIGHTING_MODEL_LAMBERT _IBL_DIFFUSE_LIGHTING_TYPE_PER_VERTEX _IBL_INPUT_TYPE_CUBEMAP
+    _IBL_MODE_DIFFUSE _IBL_SPECULAR_LIGHTING_TYPE_PER_VERTEX _METALLIC_TYPE_MAP _MULTIPLY_GLOSSINESS_MAP_BY_VALUE_ON
+    _MULTIPLY_IBL_ON _MULTIPLY_METALLIC_MAP_BY_VALUE_ON _MULTIPLY_ROUGHNESS_MAP_BY_VALUE_ON
+    _MULTIPLY_SPECULAR_MAP_BY_VALUE_ON _PIXEL_IBL_SPEC_FRESNEL_ON _RIM_LIGHT_TYPE_PER_VERTEX
+    _SPECULAR_PROCESSING_PER_VERTEX _SPECULAR_TERM_LIGHTING_MODEL_GGX_LOOKUP _SPECULAR_TYPE_MAP
+    _USE_AMBIENT_LIGHT_ON _USE_BASEMAP_ON _USE_DIFFUSE_TERM_ON _USE_GLOSSINESS_VALUE_ON
+    _USE_IBL_ON _USE_NORMAL_MAP_ON _USE_ROUGHNESS_VALUE_ON _USE_RT_LIGHTING_ON _WORKFLOW_LIT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseIBLTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplacementMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LightLookupTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatcapTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularIBLTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AMBIENT_LIGHT_PROCESSING: 0
+    - _AmbientIntensity: 1
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DIFFUSE_PROCESSING: 0
+    - _DIFFUSE_TERM_LIGHTING_MODEL: 0
+    - _DepthMultiplicationFactor: 0
+    - _DetailNormalMapScale: 1
+    - _DiffuseIBLIntensity: 1
+    - _DirectionalLightShadowIntensity: 0.5
+    - _DisplacemenIntensity: 1
+    - _DisplacementIntensity: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossinessMapMultiply: 1
+    - _GlossinessValue: 1
+    - _GlossyReflections: 1
+    - _IBL_DIFFUSE_LIGHTING_TYPE: 0
+    - _IBL_INPUT_TYPE: 0
+    - _IBL_MODE: 0
+    - _IBL_SPECULAR_LIGHTING_TYPE: 0
+    - _METALLIC_TYPE: 0
+    - _MULTIPLY_AMBIENT_LIGHT: 0
+    - _MULTIPLY_DEPTH: 0
+    - _MULTIPLY_GLOSSINESS_MAP_BY_VALUE: 1
+    - _MULTIPLY_IBL: 1
+    - _MULTIPLY_METALLIC_MAP_BY_VALUE: 1
+    - _MULTIPLY_ROUGHNESS_MAP_BY_VALUE: 1
+    - _MULTIPLY_SPECULAR_MAP_BY_VALUE: 1
+    - _Metallic: 0
+    - _MetallicMapMultiply: 1
+    - _MetallicValue: 1
+    - _Mode: 0
+    - _NormalMapIntensity: 1
+    - _OcclusionStrength: 1
+    - _PIXEL_IBL_SPEC_FRESNEL: 1
+    - _Parallax: 0.02
+    - _RECEIVE_UNITY_SHADOWS: 0
+    - _RIM_LIGHT_TYPE: 0
+    - _RoughnessMapMultiply: 1
+    - _RoughnessValue: 1
+    - _SPECULAR_PROCESSING: 0
+    - _SPECULAR_TERM_LIGHTING_MODEL: 3
+    - _SPECULAR_TYPE: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpecularIBLIntensity: 1
+    - _SpecularMapMultiply: 1
+    - _SpecularValue: 1
+    - _SrcBlend: 1
+    - _TINT_SHADOWS: 0
+    - _USE_AMBIENT_LIGHT: 1
+    - _USE_BASEMAP: 1
+    - _USE_BASEMAP_TINT: 0
+    - _USE_DIFFUSE_TERM: 1
+    - _USE_GLOSSINESS_VALUE: 1
+    - _USE_IBL: 1
+    - _USE_MATCAP_DIFFUSE: 0
+    - _USE_MATCAP_LIGHTING: 0
+    - _USE_MATCAP_SPECULAR: 0
+    - _USE_NORMAL_MAP: 1
+    - _USE_NORMAL_MAP_INTENSITY: 0
+    - _USE_RIM_LIGHT: 0
+    - _USE_ROUGHNESS_VALUE: 1
+    - _USE_RT_LIGHTING: 1
+    - _USE_RT_SHADOWS: 0
+    - _USE_RT_SPECULAR: 0
+    - _USE_SPECULAR_TERM: 0
+    - _USE_VERTEX_DISPLACEMENT: 0
+    - _UVSec: 0
+    - _WORKFLOW: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MetallicColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
