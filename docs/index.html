@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PSVita Fast Post FX</title>
+	<style>
+		/* Add your styles here */
+		body {
+			font-family: sans-serif;
+			color: white;
+			background-color: #2c3e50;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.card {
+			background-color: #34495e;
+			border-radius: 10px;
+			box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+			overflow: hidden;
+		}
+		.card img {
+			width: 100%;
+			height: auto;
+		}
+		.card-body {
+			padding: 20px;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		.feature {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		.feature img {
+			width: 200px;
+			height: auto;
+			margin-right: 20px;
+		}
+		@media (max-width: 992px) {
+			.feature {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			.feature img {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+		.red {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-body">
+				<h1>PSVita Fast Post FX</h1>
+				<p>This post processing stack is optimized for performance, particularly on modern systems. It can use either a single or dual pass to apply various effects to the image. These effects are applied using the vertex shader rather than the fragment (pixel) shader, which helps to boost performance. The stack uses a tesselated quad instead of the screen buffer because this allows for more flexibility in applying effects such as vignetting, which would be difficult to achieve with only four vertices.</p>
+				<p>The single shader included in this stack offers a range of effects, including gaussian blur, depth based outline, normal mapping screen warping, tinted vignette, ramp based color grading, brightness and contrast control, film grain, color space conversion, depth based fog, sun aura, height based fog & bloom (note: bloom may not work as intended).</p>
+				<h2>Techniques Used</h2>
+				<p>Before the image is displayed, the game view, depth, height, and normal values are first rendered to two internal buffers (render textures). These buffers are then used to apply the post processing effects using the vertex shader. This approach provides a significant performance boost with minimal performance penalty. The tesselated quad is placed in front of the camera that renders the image to the screen.</p>
+				<h2>Features</h2>
+				<h2>Features</h2>
+<div class="feature">
+	<img src="gaussian-blur.jpg" alt="Gaussian blur example">
+	<div>
+		<h3>Gaussian Blur</h3>
+		<p>This effect adds blur to the image using a Gaussian function. It has a light performance penalty, but the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="depth-outline.jpg" alt="Depth based outline example">
+	<div>
+		<h3>Depth Based Outline</h3>
+		<p>This effect adds an outline to objects based on their depth in the scene. It has a medium performance penalty, and the quality may suffer if it is further optimized. However, the performance has been fine-tuned in this shader as much as possible without sacrificing quality.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="normal-mapping.jpg" alt="Normal mapping screen warping example">
+	<div>
+		<h3>Normal Mapping Screen Warping</h3>
+		<p>This effect warps the screen based on the normals of the objects in the scene. It has a light performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="tinted-vignette.jpg" alt="Tinted vignette example">
+	<div>
+		<h3>Tinted Vignette</h3>
+		<p>This effect adds a vignette around the edges of the image, with a customizable color. It has a light performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="ramp-color-grading.jpg" alt="Ramp based color grading example">
+	<div>
+		<h3>Ramp Based Color Grading</h3>
+		<p>This effect allows you to adjust the color balance of the image using a color ramp. It has a light performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="brightness-contrast.jpg" alt="Brightness and contrast control example">
+	<div>
+		<h3>Brightness and Contrast Control</h3>
+		<p>This effect allows you to adjust the brightness and contrast of the image. It has a light performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="film-grain.jpg" alt="Film grain example">
+	<div>
+		<h3>Film Grain</h3>
+		<p>This effect adds film grain to the image for a more cinematic look. It has a light performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="color-space-conversion.jpg" alt="Color space conversion example">
+	<div>
+		<h3>Color Space Conversion</h3>
+		<p>This effect allows you to convert the image from one color space to another (e.g. RGB to HSL). It has a light performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="depth-fog.jpg" alt="Depth based fog example">
+	<div>
+		<h3>Depth Based Fog</h3>
+		<p>This effect adds fog to the image based on the depth of the objects in the scene. It has a medium performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="sun-aura.jpg" alt="Sun aura example">
+	<div>
+		<h3>Sun Aura</h3>
+		<p>This effect adds an aura around a bright light source (e.g. the sun). It has a medium performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="height-fog.jpg" alt="Height based fog example">
+	<div>
+		<h3>Height Based Fog</h3>
+		<p>This effect adds fog to the image based on the height of the objects in the scene. It has a medium performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+<div class="feature">
+	<img src="bloom.jpg" alt="Bloom example">
+	<div>
+		<h3>Bloom</h3>
+		<p>This effect adds a bloom effect to the image, where bright areas of the image appear to "glow." However, <span class="notification">note: bloom may not work as intended in this shader</span>. It has a heavy performance penalty and the performance has not been fine-tuned in this shader.</p>
+	</div>
+</div>
+        <div class="feature">
+	<img src="debug-views.jpg" alt="Debug views example">
+	<div>
+		<h3>Debug Views</h3>
+		<p>This shader includes a number of debug views to help troubleshoot and understand the inner workings of the post processing stack. These views allow you to visualize the data in the render textures (e.g. game view, depth, height, normal) and can be useful for debugging and optimizing the effects. It has a light performance penalty and the performance has been fine-tuned in this shader.</p>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
